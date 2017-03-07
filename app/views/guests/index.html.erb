@@ -1,1 +1,8 @@
-<h1><%= @quote.inspect %></h1>
+
+<% @guests.each do |guest| %>
+  <div>
+    <i><%= guest.first_name %></i>
+    <p><%= guest.last_name %></p>
+  </div>
+  <hr />
+<% end %>

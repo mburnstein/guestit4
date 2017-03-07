@@ -1,5 +1,5 @@
 class GuestsController < ApplicationController
   def index
-    @guest=Guest.first
+    @guests=Guest.all
   end
 end
