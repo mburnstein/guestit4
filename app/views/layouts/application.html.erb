@@ -9,6 +9,19 @@
   </head>
 
   <body>
+    <header class="row header">
+      <div class="col-3 logo">
+        <%= link_to 'GuestIt', root_path %>
+      </div>
+      <div class="col-4 header_nav_padding">
+        Get on the list here at GuestIt
+      </div>
+      <div class="col-5 header_nav_padding">
+        <%= link_to 'Add Guest', new_guest_path %>
+      </div>
+    </header>
+
+     <br />
     <%= yield %>
   </body>
 </html>
